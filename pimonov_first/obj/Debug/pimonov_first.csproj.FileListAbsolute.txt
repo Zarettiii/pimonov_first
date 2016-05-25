@@ -1,0 +1,9 @@
+C:\Users\Александр\Documents\pimonov_first\pimonov_first\bin\Debug\pimonov_first.exe.config
+C:\Users\Александр\Documents\pimonov_first\pimonov_first\bin\Debug\pimonov_first.exe
+C:\Users\Александр\Documents\pimonov_first\pimonov_first\bin\Debug\pimonov_first.pdb
+C:\Users\Александр\Documents\pimonov_first\pimonov_first\obj\Debug\pimonov_first.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Documents\pimonov_first\pimonov_first\obj\Debug\pimonov_first.Form1.resources
+C:\Users\Александр\Documents\pimonov_first\pimonov_first\obj\Debug\pimonov_first.Properties.Resources.resources
+C:\Users\Александр\Documents\pimonov_first\pimonov_first\obj\Debug\pimonov_first.csproj.GenerateResource.Cache
+C:\Users\Александр\Documents\pimonov_first\pimonov_first\obj\Debug\pimonov_first.exe
+C:\Users\Александр\Documents\pimonov_first\pimonov_first\obj\Debug\pimonov_first.pdb
