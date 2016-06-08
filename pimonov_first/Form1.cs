@@ -13,9 +13,15 @@ namespace pimonov_first
 {
     public partial class Form1 : Form
     {
+        Random rnd__random; // Генератор случайных чисел
+
+
+
         public Form1()
         {
             InitializeComponent();
+
+            rnd__random = new Random(); // Установить генератор случайных чисел
         }
 
 
@@ -30,12 +36,13 @@ namespace pimonov_first
             //
             if
                 (
-                    txt_a.Text == "" ||
-                    txt_b.Text == "" ||
-                    txt_c.Text == "" ||
-                    txt_d.Text == "" ||
-                    txt_q.Text == "" ||
-                    txt_n.Text == ""
+                    txt_a.Text           == "" ||
+                    txt_b.Text           == "" ||
+                    txt_c.Text           == "" ||
+                    txt_d.Text           == "" ||
+                    txt_q.Text           == "" ||
+                    txt_n.Text           == "" ||
+                    txt_start_price.Text == ""
                 )
             {
                 MessageBox.Show("Заполните все поля"); // Предупредить в сообщении, о незаполненности полей
@@ -53,7 +60,8 @@ namespace pimonov_first
                                                                         double.Parse(txt_b.Text),
                                                                         double.Parse(txt_c.Text),
                                                                         double.Parse(txt_d.Text),
-                                                                        double.Parse(txt_q.Text)
+                                                                        double.Parse(txt_q.Text),
+                                                                        double.Parse(txt_start_price.Text)
                                                                     );
 
 
@@ -75,5 +83,31 @@ namespace pimonov_first
                 }                                                    
             }
         }
+
+
+
+        /**
+         * Установить случайные значения в поля формы
+         */
+        private void btn_set_random_values_Click(object sender, EventArgs e)
+        {
+            //
+            // Установить случайные значения для параметров
+            //
+            txt_a.Text = rnd__random.Next(0, 10).ToString();
+            txt_b.Text = rnd__random.Next(0, 10).ToString();
+            txt_c.Text = rnd__random.Next(0, 10).ToString();
+            txt_d.Text = rnd__random.Next(0, 10).ToString();
+
+            txt_q.Text = rnd__random.NextDouble().ToString(); // Установить значение реакции
+
+            //
+            // Установить начение начальной цены
+            //
+            txt_start_price.Text = rnd__random.NextDouble().ToString();
+
+            txt_n.Text = rnd__random.Next(3, 7).ToString(); // Установить количество периодов 
+        }
+
     }
 }
